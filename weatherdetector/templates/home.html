@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Weather App</title>
+    </head>
+    <body>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <input type="text" name="city">
+            <input type="submit" value="Check">
+            <h1>{{temp}}</h1>
+        </form>
+    </body>
+</html>
